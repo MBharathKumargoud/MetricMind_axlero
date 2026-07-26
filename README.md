@@ -34,4 +34,12 @@ point (trustworthy agentic analytics vs. hallucination-prone Text-to-SQL).
 - **Day 3**: Set up Snowflake warehouse (METRICMIND_DB), loaded mock 
   sales data (RAW_SALES table). Initialized dbt project, connected to 
   Snowflake, and built first staging model (stg_sales) with computed 
-  margin column.     
+  margin column.
+- **Day 4**: Defined the Semantic Layer using dbt (entities, 
+  dimensions, measures for sales data). Created governed metrics 
+  (total_revenue, total_margin, margin_percentage). Added required 
+  time-spine model for date-based grouping.
+- **Day 5**: Ran Governance Audit — built governance_check model on 
+  governed staging layer, confirmed identical results across 3 
+  repeated runs, proving deterministic metric calculation with no 
+  hallucination risk.
