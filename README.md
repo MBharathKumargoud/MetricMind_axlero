@@ -35,7 +35,7 @@ point (trustworthy agentic analytics vs. hallucination-prone Text-to-SQL).
   sales data (RAW_SALES table). Initialized dbt project, connected to 
   Snowflake, and built first staging model (stg_sales) with computed 
   margin column.
-  - **Day 4**: Defined the Semantic Layer using dbt (entities, 
+- **Day 4**: Defined the Semantic Layer using dbt (entities, 
   dimensions, measures for sales data). Created governed metrics 
   (total_revenue, total_margin, margin_percentage). Added required 
   time-spine model for date-based grouping.
