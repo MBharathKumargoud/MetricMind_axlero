@@ -1,0 +1,19 @@
+metrics:
+  - name: total_revenue
+    type: simple
+    label: "Total Revenue"
+    type_params:
+      measure: revenue
+
+  - name: total_margin
+    type: simple
+    label: "Total Margin"
+    type_params:
+      measure: margin
+
+  - name: margin_percentage
+    type: ratio
+    label: "Margin %"
+    type_params:
+      numerator: total_margin
+      denominator: total_revenue
