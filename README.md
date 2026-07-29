@@ -43,3 +43,13 @@ point (trustworthy agentic analytics vs. hallucination-prone Text-to-SQL).
   governed staging layer, confirmed identical results across 3 
   repeated runs, proving deterministic metric calculation with no 
   hallucination risk.
+  
+### Week 2
+- **Day 6**: Set up LangChain AI agent (using free Groq/Llama model). 
+  Connected agent to Snowflake via 3 pre-approved governed tools 
+  (get_total_revenue, get_total_margin, get_margin_percentage) — the 
+  AI cannot write its own SQL, it can only call these fixed, 
+  governance-approved functions.
+- **Day 7**: Ran API Check — tested 3 different natural-language 
+  phrasings of questions, confirmed the agent correctly selects the 
+  right governed metric tool every time. Documented in api_check.md.
