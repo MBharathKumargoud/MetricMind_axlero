@@ -1,0 +1,28 @@
+semantic_models:
+  - name: sales
+    model: ref('stg_sales')
+    defaults:
+      agg_time_dimension: sale_date
+    entities:
+      - name: transaction
+        type: primary
+        expr: transaction_id
+    dimensions:
+      - name: sale_date
+        type: time
+        type_params:
+          time_granularity: day
+      - name: region
+        type: categorical
+      - name: product_category
+        type: categorical
+    measures:
+      - name: revenue
+        agg: sum
+        expr: revenue
+      - name: cost
+        agg: sum
+        expr: cost
+      - name: margin
+        agg: sum
+        expr: margin
